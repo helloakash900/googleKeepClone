@@ -1,38 +1,137 @@
-.App {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  width: 100%;
+  line-height: 100px;
+  background-color: #f5ba13;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+  color: white;
+  box-shadow: 5px 3px 15px -5px rgb(0, 0, 0);
+}
+.header img {
+  width: 200px;
+  height: 70px;
+}
+.footer {
+  clear: both;
+  position: relative;
+  height: 200px;
   text-align: center;
+  top: 180px;
+  height: 39px;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-note {
+  width: 30%;
+  padding: 15px 10px 5px 10px;
+  margin: 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
 }
+.btn1 {
+  color: #f4b400;
+  /* margin-left: 20%; */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn1:hover {
+  color: white;
+  background-color: #f4b400;
+}
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 50px;
+  color: #ecf0f1;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 5px 3px 15px -5px rgb(0, 0, 0);
+  border-radius: 10px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 86%;
+  height: 140px;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0px;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0px 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note .btn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f4b400;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 15px -10px black;
+  border-radius: 15px;
+}
+
+.deleteIcon {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+.note .btn:hover {
   color: white;
+  background-color: #f5ba13;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note .btn:hover .deleteIcon {
+  color: #fff;
 }
